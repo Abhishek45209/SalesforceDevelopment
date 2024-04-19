@@ -10,5 +10,11 @@ public with sharing class DayAndTime {
 
         //System.now gives date and time and System.today gives date only
 
+        Time OnlyTime = now.time();
+        System.debug(OnlyTime);
+
+        Date OnlyDate = now.date();
+        System.debug(OnlyDate);
+
     }
 }
