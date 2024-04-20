@@ -39,7 +39,21 @@ public class TrainingAssignment {
     
     public static void QuestionFive(){
         // Write a SOQL query to select the Name, Email, and Phone fields from all Contact records
+        List<Contact> ConQuery = [SELECT Name, Email, Phone from Contact];
+        System.debug(ConQuery);
     }
     
+    public static void QuestionSix(){
+        //Write a code snippet to insert a new Account record with the name "Acme Corporation" and the industry "Technology
+        List<Account> acclist = new List<Account>();
+        
+        Account AcmeCorps = new Account();
+        AcmeCorps.Name = 'Acme Corporation';
+        AcmeCorps.Industry = 'Technology';
+        
+        acclist.add(AcmeCorps);
+        insert(acclist);
+        
+    }
     
 }
