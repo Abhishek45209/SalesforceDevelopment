@@ -19,6 +19,27 @@ public class TrainingAssignment {
     }
     public static void QuestionThree(){
     //Create a List of Strings containing the names "John", "Jane", and "Bob"
-    
+        List<String> NameList = New List<String>{'John','Jane'};  //statically
+            NameList.add('Bob'); //dynamically
+        
+        //Write a loop to iterate over the List and print each name.
+
+        for(integer i=0;i<3;i++){
+            System.debug(Namelist[i]);
+        }
+        
     }
+    
+    //Define a simple class named Calculator with a method add that takes two Integer parameters and returns their sum.
+    
+    public static Integer QuestionFour(Integer num1, Integer num2){
+       Integer sum = num1 + num2;
+       return sum;
+    }
+    
+    public static void QuestionFive(){
+        // Write a SOQL query to select the Name, Email, and Phone fields from all Contact records
+    }
+    
+    
 }
