@@ -55,5 +55,15 @@ public class TrainingAssignment {
         insert(acclist);
         
     }
+    public static void QuestionSeven(){
+        //Update the Account record inserted before named 'Acme Corporation' to change its industry to "Finance"
+        List<Account> accList = [SELECT Id, Name FROM Account WHERE Name = 'Acme Corporation'];
+        
+        for(Account Ac : accList){
+            Ac.Industry = 'Finance';
+        }
+        update(accList);
+        System.debug(accList);
+    }
     
 }
