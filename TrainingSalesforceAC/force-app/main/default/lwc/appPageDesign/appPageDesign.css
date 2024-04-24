@@ -1,0 +1,51 @@
+.container {
+    padding: 15px;
+}
+
+lightning-card {
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ADD8E6;
+    margin-bottom: 15px;
+    width: auto;
+    
+}
+
+.title {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+    text-decoration: underline;
+}
+
+.form-field{
+    margin-bottom: 10px;
+}
+
+.form_body {
+    padding: 20px;
+}
+
+.name-email-container {
+    width: 30%;
+}
+
+.complain-container {
+    width: 75%;
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+p{
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    margin:18px;
+    
+}

@@ -1,0 +1,29 @@
+<template>
+    <div class="container">
+        <lightning-card title='Complaint / Feedback ' icon-name='standard:workforce_engagement'>
+            <div class='form_body'>
+                <h1 class="title"> Fill the form to voice your concerns or share feedback  </h1>
+                <div class='form-field'>
+                    <div class="name-email-container">
+                        <lightning-input label="Your Name" type="text"></lightning-input>
+                    </div>
+                    <div class="name-email-container">
+                        <lightning-input label="Email" type="email"></lightning-input>
+                    </div>
+                    <div class="name-email-container">
+                        <lightning-input label="Date" type="datetime"></lightning-input>
+                    </div>
+                    <div class="complain-container">
+                        <lightning-textarea label="Feedback/Complaint"></lightning-textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="submit"><lightning-button variant="destructive" label="Submit" onclick={TaskSuc}></lightning-button>
+            </div>
+            <p>{ToDisplay}</p>
+            
+                
+           
+        </lightning-card>
+    </div>
+</template>
